@@ -20,11 +20,19 @@ Total number of sensors.
 
 The sensor_data.py generates simulated IoT sensor data in JSON format. It simulates temperature sensor data for a number of IoT devices, where each device is represented by a unique guid. The script takes a command-line argument to specify the number of JSON messages to generate.
 
+
+Google collab link:
+
+https://colab.research.google.com/drive/1yzZ1WsjctsX-pDyw6brnY6pu6te6VeF5#scrollTo=rJxQwDKTdDU3
+
+
 The code initializes some dictionaries to store the current state and temperature of each device, as well as a dictionary with the average temperature for each US state. Then it loops num_msgs times and generates a random guid, selects a random US state, and calculates a random temperature value based on the current temperature of the device in the selected state. The temperature value is then included in a JSON message, along with the guid, a destination ID, and a timestamp.
+
 
 The resulting JSON messages have the following structure:
 
 { "guid": "", "destination": "0-AAA12345678", "state": "", "eventTime": "", "payload": { "format": "urn:example:sensor:temp", "data": { "temperature": } } }
+
 
 
 | Field | Description | 
