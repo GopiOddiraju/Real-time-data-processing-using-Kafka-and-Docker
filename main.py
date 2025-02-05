@@ -17,9 +17,9 @@ if __name__ == "__main__":
         'bootstrap.servers': 'kafka:9092'
     }
 
-    INPUT_TOPIC = 'user-login'
-    OUTPUT_TOPIC = 'processed-user-login'
-    AGGREGATED_TOPIC = 'device_type_count'
+    INPUT_TOPIC = 'IoT-data'
+    OUTPUT_TOPIC = 'processed-data'
+    AGGREGATED_TOPIC = 'aggregated-data'
 
     # Kafka consumer and producer instances
     consumer = create_consumer(consumer_conf)

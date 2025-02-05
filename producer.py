@@ -7,7 +7,7 @@ from confluent_kafka import Producer
 from confluent_kafka.admin import AdminClient, NewTopic, KafkaError
 
 bootstrap_servers = os.environ.get('BOOTSTRAP_SERVERS', 'localhost:9092')
-topic = os.environ.get('KAFKA_TOPIC', 'user-login')
+topic = os.environ.get('KAFKA_TOPIC', 'IoT-data')
 
 # Create a Kafka producer configuration
 producer_config = {

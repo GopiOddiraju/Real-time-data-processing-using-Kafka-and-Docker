@@ -52,7 +52,7 @@ services:
       - 9093:9093
     environment:
       BOOTSTRAP_SERVERS: kafka:9092
-      KAFKA_TOPIC: user-login
+      KAFKA_TOPIC: IoT-data
     networks:
       - kafka-network
     
